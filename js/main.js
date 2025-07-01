@@ -27,8 +27,8 @@ function addPiggyShake() {
 
 function updatePiggySize(totalKr) {
   const baseScale = 1.0;
-  const maxScale = 2.0;
-  const growthPerThousand = 0.01;
+  const maxScale = 2.5;
+  const growthPerThousand = 0.005;
   const scale = Math.min(baseScale + (totalKr / 1000) * growthPerThousand, maxScale);
   piggy.style.transform = `translateX(-50%) scale(${scale})`;
 }
@@ -88,5 +88,5 @@ async function startSimulation(name) {
     } else {
       clearInterval(intervalId);
     }
-  }, 80);
+  }, 60);
 }
