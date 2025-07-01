@@ -1,0 +1,45 @@
+.coin {
+  position: absolute;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  background: gold;
+  border-radius: 50%;
+  box-shadow: 0 0 5px #aaa;
+  animation: fall 3s linear forwards;
+  z-index: 1;
+}
+
+.bill {
+  position: absolute;
+  top: 0;
+  width: 40px;
+  height: 20px;
+  background: lightgreen;
+  border: 2px solid #006400;
+  border-radius: 4px;
+  animation: fallBill 4s ease-in forwards;
+  z-index: 1;
+}
+
+@keyframes fall {
+  from {
+    transform: translateY(-50px);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(85vh);
+    opacity: 0;
+  }
+}
+
+@keyframes fallBill {
+  from {
+    transform: translateY(-50px) rotate(0deg);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(85vh) rotate(720deg);
+    opacity: 0;
+  }
+}

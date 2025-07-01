@@ -1,0 +1,38 @@
+
+/* ======= css/base.css ======= */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #f0f0f0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+#controls, #dateControl {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  z-index: 10;
+}
+
+#dateControl {
+  top: 60px;
+}
+
+#earnedDisplay {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: #ffffffdd;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  z-index: 10;
+}

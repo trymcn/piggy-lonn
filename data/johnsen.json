@@ -1,0 +1,9 @@
+{
+  "hourly_rate": 299,
+  "working_hours": 8,
+  "first_workday": "2025-06-30",
+    "last_workday": "2025-08-15",
+    "holidays": [
+        "2025-07-18"
+    ]
+}
